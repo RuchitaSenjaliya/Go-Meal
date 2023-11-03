@@ -1,0 +1,54 @@
+.address-section .title {
+  color: #a098ae;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.address-section .address,
+.address-section .address .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address-section .address .street {
+  font-size: 18px;
+  color: #2e2e2e;
+  font-weight: 700;
+  padding-left: 5px;
+}
+.address-section .para {
+  font-size: 14px;
+  color: #a098ae;
+  padding: 16px 0;
+}
+::ng-deep .yellow-btn-outline .mat-mdc-unelevated-button:not(:disabled) {
+  background: transparent;
+  border: 1px solid #f8b602;
+  border-radius: 8px !important;
+}
+
+::ng-deep .yellow-btn-outline .mdc-button__label {
+  color: #f8b602 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+::ng-deep .gray-btn-outline .mat-mdc-unelevated-button:not(:disabled) {
+  background: transparent;
+  border: 1px solid #a098ae;
+  border-radius: 8px !important;
+  padding: 16px !important;
+}
+
+::ng-deep .gray-btn-outline .mdc-button__label {
+  color: #2e2e2e !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .address-section .address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .address-section .address .yellow-btn-outline {
+    align-self: center;
+    margin-top: 8px;
+  }
+}

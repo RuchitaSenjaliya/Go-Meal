@@ -1,0 +1,134 @@
+.header {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .username {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  font-family: "Poppins", sans-serif;
+}
+.header .search {
+  width: 40%;
+  position: relative;
+}
+.header .search input {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 25px;
+}
+
+.header .search ::placeholder {
+  color: #aaa;
+}
+.header .search .form-control {
+  padding: 10px 2.8rem;
+}
+
+.header .search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  top: 10px;
+  left: 6px;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #f8b602;
+}
+
+.discount {
+  position: relative;
+  background-color: #f8b602;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 0 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+.discount .text {
+  color: #fff;
+  width: 45%;
+}
+.discount .text .title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+.discount .text .para {
+  font-size: 0.9rem;
+  line-height: 20px;
+  padding-top: 25px;
+}
+.discount .right {
+  text-align: end;
+  z-index: 3;
+}
+
+.ellipse-top {
+  position: absolute;
+  top: 0;
+  right: 285px;
+  z-index: 2;
+}
+.ellipse-left-bottom {
+  position: absolute;
+  bottom: -20px;
+  left: -110px;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+.ellipse-right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: -110px;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1200px) {
+  .header .username {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .discount .text {
+    padding: 16px 0;
+  }
+  .discount .text .title {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .discount .right {
+    display: none;
+  }
+  .discount .text {
+    width: 60%;
+    padding: 24px 0;
+  }
+}
+@media screen and (max-width: 667px) {
+  .header .username {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+  .discount .text {
+    width: 100%;
+    padding: 24px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header .search {
+    width: 100%;
+    position: relative;
+  }
+}

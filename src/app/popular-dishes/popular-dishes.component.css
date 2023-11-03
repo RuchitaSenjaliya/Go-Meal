@@ -1,0 +1,111 @@
+.dishes {
+  font-family: "Poppins", sans-serif;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  padding: 15px 0;
+}
+.view {
+  display: flex;
+  align-items: center;
+  color: #f8b602;
+  text-decoration: none;
+  cursor: pointer;
+}
+.view mat-icon {
+  font-size: small;
+  height: 12px;
+  padding-left: 8px;
+}
+.dishes .dish {
+  border-radius: 16px;
+}
+.dishes .dish .burger-img {
+  position: relative;
+  background-size: cover;
+  text-align: center;
+  margin: 36px 0 15px 0;
+}
+.dishes .dish .burger-img .fav-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  z-index: 999;
+  width: 100%;
+}
+.dishes .dish .burger-img .offer {
+  background-color: #eb5757;
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 0 8px 8px 0;
+  font-size: 18px;
+}
+.dishes .dish .burger-img .like {
+  color: #dbdbdb;
+  padding-right: 36px;
+}
+
+/* .dishes .dish .burger-img .fav-offer .like:first-child mat-icon {
+  color: #eb5757;
+} */
+
+.dishes .dish .body {
+  padding: 16px 36px 48px 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dishes .dish .body .rating mat-icon {
+  color: #f8b602;
+}
+.dishes .dish .body .left .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2e2e2e;
+  padding: 6px 0;
+}
+.dishes .dish .body .left .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  padding-top: 8px;
+}
+.dishes .dish .body .left .price span {
+  color: #f8b602;
+}
+
+::ng-deep .mat-mdc-card {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+::ng-deep .mat-mdc-fab,
+.mat-mdc-mini-fab {
+  border-radius: 8px !important;
+}
+
+::ng-deep .mat-mdc-fab,
+.mat-mdc-mini-fab {
+  box-shadow: none !important;
+  color: #fff !important;
+  background-color: #f8b602 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  ::ng-deep .add-btn .mdc-fab {
+    width: auto !important;
+    height: auto !important;
+    padding: 8px !important;
+  }
+}

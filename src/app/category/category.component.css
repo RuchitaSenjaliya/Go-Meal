@@ -1,0 +1,40 @@
+.categories {
+  padding: 42px 0;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  padding: 15px 0;
+}
+.view {
+  display: flex;
+  align-items: center;
+  color: #f8b602;
+  text-decoration: none;
+  cursor: pointer;
+}
+mat-icon {
+  font-size: small;
+  height: 12px;
+  padding-left: 8px;
+}
+.categories .category {
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+.categories .category .name {
+  font-size: 18px;
+  color: #a098ae;
+  padding-top: 14px;
+}

@@ -1,0 +1,145 @@
+::ng-deep .mat-drawer-side {
+  border-right: none !important;
+}
+.sidebar {
+  min-height: 100vh;
+  background-color: #fff;
+  width: 18%;
+}
+.end-sidebar {
+  min-height: 100vh;
+  background-color: #fff;
+  width: 23%;
+}
+::ng-deep .mat-drawer-side.mat-drawer-end {
+  border-left: none !important;
+}
+.sidebar .logo {
+  text-align: center;
+  padding: 35px 0;
+}
+.main-content {
+  background-color: #f5f5f5;
+  padding: 35px 30px;
+}
+.sidebar .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 28px;
+}
+.sidebar .navbar .link {
+  display: flex;
+  align-items: center;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a098ae;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin: 6px 0;
+}
+.sidebar .navbar .link.active,
+.sidebar .navbar .link.active a {
+  background-color: #f8b602;
+  color: #fff;
+  border-radius: 16px;
+}
+.sidebar .navbar .link a {
+  text-decoration: none;
+  color: #a098ae;
+}
+.update {
+  position: relative;
+  background-color: #f8b602;
+  margin: 58px 28px;
+  border-radius: 16px;
+  color: #fff;
+  padding: 16px 25px 36px 32px;
+}
+.update .text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 16px 0;
+}
+.update .vector {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.update .circle {
+  position: absolute;
+  bottom: -15px;
+  right: -28px;
+}
+@media screen and (max-width: 1180px) {
+  .hide {
+    display: none;
+  }
+  .sidebar .navbar .link a.hide {
+    text-align: center;
+  }
+  .sidebar {
+    width: 12%;
+  }
+  .sidebar .navbar {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sidebar .logo {
+    text-align: center;
+    padding: 35px 12px;
+  }
+  .sidebar .navbar .link {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .end-sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 10%;
+  }
+  .sidebar .navbar {
+    padding-left: 10px;
+  }
+  .sidebar .logo {
+    padding: 25px 10px 20px 10px;
+  }
+}
+@media screen and (max-width: 632px) {
+  .sidebar .navbar {
+    padding-left: 0;
+  }
+  .sidebar .logo {
+    padding: 25px 10px 20px 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebar .navbar .link {
+    padding: 4px;
+  }
+  .main-content {
+    padding: 35px 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sidebar {
+    width: 15%;
+  }
+  .sidebar .navbar .link.active::before {
+    content: none;
+  }
+}
+@media screen and (max-width: 321px) {
+  .sidebar {
+    width: 18%;
+  }
+}

@@ -1,0 +1,27 @@
+.order-menu {
+  padding: 42px 0;
+}
+.order-menu .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+.order-menu .item-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 0;
+  color: #2e2e2e;
+}
+.order-menu .quantity {
+  color: #a098ae;
+  font-size: 14px;
+}
+.order-menu .price {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 0;
+  color: #2e2e2e;
+}
+.order-menu .price span {
+  color: #f8b602;
+}

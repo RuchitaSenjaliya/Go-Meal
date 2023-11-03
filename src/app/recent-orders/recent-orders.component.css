@@ -1,0 +1,72 @@
+.recent-orders {
+  font-family: "Poppins", sans-serif;
+}
+.recent-orders .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+}
+.recent-orders .heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  padding: 15px 0;
+}
+.recent-orders .heading .view {
+  display: flex;
+  align-items: center;
+  color: #f8b602;
+  text-decoration: none;
+  cursor: pointer;
+}
+.recent-orders .heading .view mat-icon {
+  font-size: small;
+  height: 12px;
+  padding-left: 8px;
+}
+
+.recent-orders .order .order-img {
+  text-align: center;
+  margin: 12px 0;
+  padding: 12px 0;
+  position: relative;
+}
+.recent-orders .order .order-img .fav {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  color: #dbdbdb;
+  z-index: 999;
+}
+.recent-orders .order .body {
+  text-align: center;
+}
+
+.recent-orders .order .body .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2e2e2e;
+  padding: 6px 0 0 0;
+}
+.recent-orders .order .body .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  padding: 16px 0;
+}
+.recent-orders .order .body .price span {
+  color: #f8b602;
+}
+
+.recent-orders .order .body .km {
+  color: #a098ae;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recent-orders .order .body .time {
+  padding-left: 16px;
+}

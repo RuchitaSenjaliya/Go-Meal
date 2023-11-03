@@ -1,0 +1,91 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav opened mode="side" class="sidebar"
+    ><div class="logo">
+      <img src="../../assets/GoMeal..png" alt="" class="img-fluid" />
+    </div>
+    <div class="navbar">
+      <li class="link active">
+        <img
+          src="../../assets/Restaurant Location.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Dashboard</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/Delivery Scooter.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Lab Test</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/Review.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Appointment</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/Order Discussion.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Medicine Order</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/24 Hour Food Delivery.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Message</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/Bill.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Payment</a>
+      </li>
+      <li class="link">
+        <img
+          src="../../assets/Setting.png"
+          alt=""
+          srcset=""
+          class="me-0 me-lg-3 img-fluid"
+        />
+        <a class="hide" href="#">Settings</a>
+      </li>
+    </div>
+    <div class="update hide">
+      <div class="text">Upgrade your Account to Get Free Voucher</div>
+      <button mat-raised-button>Upgrade</button>
+      <div class="vector">
+        <img src="../../assets/Vector (1).png" alt="" />
+      </div>
+      <div class="circle">
+        <img src="../../assets/Mask Group.png" alt="" />
+      </div></div
+  ></mat-sidenav>
+
+  <div class="main-content">
+    <app-header></app-header>
+    <app-category></app-category>
+    <app-popular-dishes></app-popular-dishes>
+    <app-recent-orders></app-recent-orders>
+  </div>
+  <mat-sidenav opened mode="side" position="end" class="end-sidebar">
+    <app-end-content></app-end-content>
+  </mat-sidenav>
+</mat-sidenav-container>
